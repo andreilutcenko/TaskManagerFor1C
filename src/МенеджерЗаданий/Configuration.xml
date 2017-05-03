@@ -137,7 +137,7 @@
 			<ObjectAutonumerationMode>NotAutoFree</ObjectAutonumerationMode>
 			<ModalityUseMode>Use</ModalityUseMode>
 			<SynchronousPlatformExtensionAndAddInCallUseMode>Use</SynchronousPlatformExtensionAndAddInCallUseMode>
-			<InterfaceCompatibilityMode>Version8_2</InterfaceCompatibilityMode>
+			<InterfaceCompatibilityMode>Version8_2EnableTaxi</InterfaceCompatibilityMode>
 			<CompatibilityMode>Version8_2_16</CompatibilityMode>
 			<DefaultConstantsForm/>
 		</Properties>
@@ -148,9 +148,11 @@
 			<CommonModule>мзЗадания</CommonModule>
 			<CommonModule>Тестирование</CommonModule>
 			<ScheduledJob>мзМенеджерЗаданий</ScheduledJob>
+			<Constant>мзАлгоритмПланировщика</Constant>
 			<Constant>мзГлубинаХраненияИстории</Constant>
 			<Constant>мзОграничениеНаКоличествоИсполнителей</Constant>
 			<Enum>мзСостоянияЗаданий</Enum>
+			<Enum>мзАлгоритмПланировщика</Enum>
 			<DataProcessor>мзУправлениеМенеджеромЗаданий</DataProcessor>
 			<InformationRegister>мзЗадания</InformationRegister>
 			<InformationRegister>мзНастройкиМетодовОбработчиков</InformationRegister>

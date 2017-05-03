@@ -23,6 +23,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.мзСостоянияЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.мзГлубинаХраненияИстории</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.мзНастройкиМетодовОбработчиков</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.мзАлгоритмПланировщика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мзАлгоритмПланировщика</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

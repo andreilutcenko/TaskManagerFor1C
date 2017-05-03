@@ -144,6 +144,14 @@
 								</Button>
 							</ChildItems>
 						</UsualGroup>
+						<InputField name="АлгоритмПланировщика" id="83">
+							<DataPath>АлгоритмПланировщика</DataPath>
+							<ContextMenu name="АлгоритмПланировщикаКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="АлгоритмПланировщикаРасширеннаяПодсказка" id="85"/>
+							<Events>
+								<Event name="OnChange">АлгоритмПланировщикаПриИзменении</Event>
+							</Events>
+						</InputField>
 						<Button name="ФормаНастройки" id="54">
 							<Type>Hyperlink</Type>
 							<CommandName>Form.Command.Настройки</CommandName>
@@ -409,6 +417,39 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="АлгоритмПланировщика" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм планировщика</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.мзАлгоритмПланировщика</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>АлгоритмПланировщика</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">МенеджерЗапущен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Доступность</dcscor:parameter>
+						<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ЗапуститьМенеджераЗаданий" id="1">
